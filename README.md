@@ -20,7 +20,7 @@ For all configuration options available in Hyde, see the original [documentation
 ### Enhancements
 
 - Disqus comment count below post title
-- Disqus comments can be disabled on a per post/page basis 
+- Disqus comments can be disabled on a per post/page basis
 - Google Analytics tracking id
 - Gravatar image in sidebar
 - Minified CSS style sheets
@@ -36,16 +36,17 @@ Below is the site `yaml` configuration I use to generate [fourteenislands.io](ht
 ---
 
   baseURL: "https://fourteenislands.io"
-  googleAnalytics: "UA-19075933-15"
+  googleAnalytics: "UA-19075933-XX"
   languageCode: "en-us"
   theme: "hyde-14"
   title: "fourteenislands.io"
 
   author:
     name: "Ludovic Roguet"
+    external: "https://lroguet.com"
     github: "lroguet"
     ### The hashed value of the author's Gravatar email address
-    gravatar: "bf38af25811e83a7213e721d8c0a150f"
+    gravatar: "bf38af25811e83a7213e721d8c0a123f"
     linkedin: "lroguet"
     twitter: "lroguet"
 
@@ -53,8 +54,6 @@ Below is the site `yaml` configuration I use to generate [fourteenislands.io](ht
     ### Global
     description: "Cirrus, Cirrostratus & Cirrocumulus. From Stockholm. With Love."
     disqusShortname: "fourteenislands"
-    ### Will display in sidebar as '© 2010-2017' for example
-    since: "1980"
     ### Resources that have been / will be minified before deployment
     minified:
       - css
@@ -64,8 +63,12 @@ Below is the site `yaml` configuration I use to generate [fourteenislands.io](ht
       - twitter-summary-card
     ### Theme
     layoutReverse: true
-    # themeColor: "theme-base-09"
+    ### Sidebar
+    cookies: true
+    powered: false
     rss: true
+    ### Will display in sidebar as '© 2010-2017' for example
+    since: "1980"
 
   permalinks:
     posts: "/:year/:month/:slug/"
