@@ -20,6 +20,7 @@ For all configuration options available in Hyde, see the original [documentation
 ### Enhancements
 
 - Disqus comment count below post title
+- Disqus comments can be disabled on a per post/page basis 
 - Google Analytics tracking id
 - Gravatar image in sidebar
 - Minified CSS style sheets
