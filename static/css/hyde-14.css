@@ -80,3 +80,19 @@ ul.posts {
 .sidebar-lead {
   font-size: 1rem;
 }
+
+/*
+* Additional CSS for printing
+*/
+
+@media print {
+
+  .no-print {
+    display:none;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+}
