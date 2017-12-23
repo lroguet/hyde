@@ -2,14 +2,14 @@
   <div class="taxonomy">
 
     {{ if .Params.categories }}
-      <i class="fa fa-folder-open" aria-hidden="true"></i>
+      <i class="fas fa-folder-open"></i>
       {{ range .Params.categories }}
         <a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}" title="{{ . }}">{{ . }}</a>
       {{ end }}
     {{ end }}
 
     {{ if .Params.tags }}
-        <i class="fa fa-tags fa-fw"></i>
+        <i class="fas fa-tags"></i>
         {{ range .Params.tags }}
             <a class="label" href="{{ "/tags/" | absURL }}{{ . | urlize }}" title="{{ . }}">{{ . }}</a>
         {{ end }}
