@@ -43,7 +43,6 @@ Below is the site `yaml` configuration I use to generate [fourteenislands.io](ht
 
   author:
     name: "Ludovic Roguet"
-    bitcoin: 1JU59RHfmdEZCPgetf3rjrWU8JQiFeGPaL
     external: "https://lroguet.com"
     github: "lroguet"
     ### The hashed value of the author's Gravatar email address
