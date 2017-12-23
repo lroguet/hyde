@@ -26,7 +26,7 @@ For all configuration options available in Hyde, see the original [documentation
 - Minified CSS style sheets
 - Open Graph, Google News, Schema & Twitter Cards meta tags
 - Reading time below post title
-- Social links with [Font Awesome](http://fontawesome.io/) 4.7.0
+- Social links with [Font Awesome](http://fontawesome.io/) 5.0.2
 - And a few other layout changes to my liking
 
 ### Example
@@ -43,6 +43,7 @@ Below is the site `yaml` configuration I use to generate [fourteenislands.io](ht
 
   author:
     name: "Ludovic Roguet"
+    bitcoin: 1JU59RHfmdEZCPgetf3rjrWU8JQiFeGPaL
     external: "https://lroguet.com"
     github: "lroguet"
     ### The hashed value of the author's Gravatar email address
