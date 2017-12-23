@@ -2,13 +2,4 @@
   {{ if .Site.Params.since }}&copy; {{ with .Site.Params.since }}{{ . }}{{ end }}-{{ now.Format "2006" }}<br/>{{ end }}
   {{ if .Site.Params.powered }}Powered by <a href="https://gohugo.io" title="Hugo">Hugo</a> and <a href="https://github.com/lroguet/hyde-14" title="Hyde-14">Hyde-14</a>{{ end }}
   {{ if .Site.Params.cookies }}This website uses <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" title="Cookies - Information that websites store on your computer">cookies</a> to ensure you get the best experience.{{ end }}
-  <br/>
-  <i class="fab fa-bitcoin"></i>
-  <span style="font-size: 60%">
-    {{ if .Site.Author.bitcoin }}
-      {{ .Site.Author.bitcoin }}
-    {{ else }}
-      1JU59RHfmdEZCPgetf3rjrWU8JQiFeGPaL
-    {{ end }}
-  </span>
 </p>
