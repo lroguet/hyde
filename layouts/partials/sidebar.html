@@ -2,8 +2,12 @@
   <div class="container sidebar-sticky">
 
     <div class="sidebar-about">
-      {{ if .Site.Author.gravatar }}
-        <img src="https://www.gravatar.com/avatar/{{ .Site.Author.gravatar }}?s=200" alt="gravatar" title="{{ .Site.Author.name }}">
+      {{ if .Site.Author.avatar }}
+        {{ if (fileExists .Site.Author.avatar) }}
+          <img src="{{ substr .Site.Author.avatar 6 | absURL }}" />
+        {{ else }}
+          <img src="https://www.gravatar.com/avatar/{{ .Site.Author.avatar }}?s=200" alt="gravatar" title="{{ .Site.Author.name }}">
+        {{ end }}
       {{ end }}
       <h1>{{ .Site.Author.name }}</h1>
       {{ with .Site.Params.description }}
@@ -32,6 +36,6 @@
     </ul>
 
     {{ partial "copyright.html" . }}
-    
+
   </div>
 </div>
