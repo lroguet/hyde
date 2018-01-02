@@ -35,48 +35,48 @@ Below is the site `yaml` configuration I use to generate [fourteenislands.io](ht
 ```yaml
 ---
 
-  baseURL: "https://fourteenislands.io"
-  googleAnalytics: "UA-19075933-XX"
-  languageCode: "en-us"
-  theme: "hyde-14"
-  title: "fourteenislands.io"
+baseURL: "https://fourteenislands.io"
+googleAnalytics: "UA-19075933-XX"
+languageCode: "en-us"
+theme: "hyde-14"
+title: "fourteenislands.io"
 
-  author:
-    name: "Ludovic Roguet"
-    external: "https://lroguet.com"
-    github: "lroguet"
-    ### The hashed value of the author's Gravatar email address
-    gravatar: "bf38af25811e83a7213e721d8c0a123f"
-    linkedin: "lroguet"
-    twitter: "lroguet"
+author:
+  name: "Ludovic Roguet"
+  ### The hashed value of the author's Gravatar email address OR a path to a
+  ### local image added to the 'static' folder (static/assets/images/avatar.jpeg for example)
+  avatar: "static/assets/images/avatar.jpeg"
+  external: "https://lroguet.com"
+  github: "lroguet"
+  linkedin: "lroguet"
+  twitter: "lroguet"
 
-  params:
-    ### Global
-    description: "Cirrus, Cirrostratus & Cirrocumulus. From Stockholm. With Love."
-    disqusShortname: "fourteenislands"
-    ### Resources that have been / will be minified before deployment
-    minified:
-      - css
-    ### Available for social: 'open-graph', 'google-news', 'schema' and 'twitter-summary-card'
-    social:
-      - open-graph
-      - twitter-summary-card
-    ### Theme
-    layoutReverse: true
-    ### Sidebar
-    cookies: true
-    powered: false
-    rss: true
-    ### Will display in sidebar as '© 2010-2017' for example
-    since: "1980"
+params:
+  ### Global
+  description: "Cirrus, Cirrostratus & Cirrocumulus. From Stockholm. With Love."
+  disqusShortname: "fourteenislands"
+  ### Available for social: 'open-graph', 'google-news', 'schema' and 'twitter-summary-card'
+  social:
+    - open-graph
+    - twitter-summary-card
+  ### Theme
+  layoutReverse: true
+  ### Sidebar
+  cookies: >
+    This website uses [cookies](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer) 
+    to ensure you get the best experience.
+  powered: false
+  rss: true
+  ### Will display in sidebar as '© 2010-2017' for example
+  since: "1980"
 
-  permalinks:
-    posts: "/:year/:month/:slug/"
-    pages: "/:slug/"
+permalinks:
+  posts: "/:year/:month/:slug/"
+  pages: "/:slug/"
 
-  taxonomies:
-    category: "categories"
-    tag: "tags"
+taxonomies:
+  category: "categories"
+  tag: "tags"
 
 ---
 ```
