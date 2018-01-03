@@ -29,7 +29,7 @@ For all configuration options available in Hyde, see the original [documentation
 - Social links with [Font Awesome](http://fontawesome.io/) 5.0.2
 - And a few other layout changes to my liking
 
-### Example
+### config.yaml example
 Below is the site `yaml` configuration I use to generate [fourteenislands.io](https://fourteenislands.io) with the **hyde-14** theme for Hugo.
 
 ```yaml
@@ -80,3 +80,8 @@ taxonomies:
 
 ---
 ```
+## On the interwebs
+
+* [https://fourteenislands.io](https://fourteenislands.io)
+* [https://lroguet.com](https://lroguet.com)
+* [https://minglass.se](https://minglass.se)
