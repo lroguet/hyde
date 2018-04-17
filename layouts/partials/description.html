@@ -1,1 +1,1 @@
-{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}
+{{ with .Description }}{{ . | plainify }}{{ else }}{{ if .IsPage }}{{  .Summary | plainify }}{{ else }}{{ .Site.Params.description | plainify }}{{ end }}{{ end }}
