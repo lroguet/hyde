@@ -4,9 +4,9 @@
     <div class="sidebar-about">
       {{ if .Site.Author.avatar }}
         {{ if (fileExists .Site.Author.avatar) }}
-          <img src="{{ substr .Site.Author.avatar 6 | absURL }}" />
+          <img src="{{ substr .Site.Author.avatar 6 | absURL }}" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}" />
         {{ else }}
-          <img src="https://www.gravatar.com/avatar/{{ .Site.Author.avatar }}?s=200" alt="gravatar" title="{{ .Site.Author.name }}">
+          <img src="https://www.gravatar.com/avatar/{{ .Site.Author.avatar }}?s=200" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}">
         {{ end }}
       {{ end }}
       <h1>{{ .Site.Author.name }}</h1>
