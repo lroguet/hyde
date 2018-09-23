@@ -1,0 +1,97 @@
+/*
+ * Additional CSS for Hyde-14
+ */
+
+/*
+ * Content
+ */
+
+blockquote {
+  border-left: .1rem solid #e5e5e5;
+}
+
+.page, .post {
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/*
+.taxonomy {
+  margin-top: 1.5em;
+  padding-top: 0.75em;
+  border-top: 1px solid #e5e5e5;
+}
+*/
+
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.pagination > li {
+  display: inline;
+}
+
+.post-date-list {
+  margin-right: 1.5rem;
+}
+
+ul.posts {
+  list-style: none;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar-about h1 {
+  font-size: 1.8rem;
+}
+
+.sidebar-about img {
+  margin: 0 auto 0.5rem auto;
+  width: 150px;
+  height: 150px;
+}
+@media (min-width: 48em) {
+  .sidebar-about img {
+    margin: 0 0 0.75rem 0;
+    width: 175px;
+    height: 175px;
+  }
+}
+@media (min-width: 58em) {
+  .sidebar-about img {
+    margin: 0 0 1rem 0;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.sidebar-lead {
+  font-size: 1rem;
+}
+
+/*
+* Additional CSS for printing
+*/
+
+@media print {
+
+  .no-print {
+    display:none;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+
+}
