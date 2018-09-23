@@ -23,10 +23,10 @@ For all configuration options available in Hyde, see the original [documentation
 - Disqus comments can be disabled on a per post/page basis
 - Google Analytics tracking id
 - Gravatar image in sidebar
-- Minified CSS style sheets
+- Combined & minified style sheet (CSS)
 - Open Graph, Google News, Schema & Twitter Cards meta tags
 - Reading time below post title
-- Social links with [Font Awesome](http://fontawesome.io/) 5.0.9
+- Social links with [Font Awesome](http://fontawesome.io/) 5.3.1
 - And a few other layout changes to my liking
 
 ### config.yaml example
@@ -35,17 +35,20 @@ Below is the site `yaml` configuration I use to generate [fourteenislands.io](ht
 ```yaml
 ---
 
+---
+
 baseURL: "https://fourteenislands.io"
 googleAnalytics: "UA-19075933-XX"
 languageCode: "en-us"
 theme: "hyde-14"
 title: "fourteenislands.io"
+enableRobotsTXT: true
 
 author:
   name: "Ludovic Roguet"
   ### The hashed value of the author's Gravatar email address OR a path to a
   ### local image added to the 'static' folder (static/assets/images/avatar.jpeg for example)
-  avatar: "static/assets/images/avatar.jpeg"
+  avatar: "static/assets/images/avatar.jpg"
   external: "https://lroguet.com"
   github: "lroguet"
   linkedin: "lroguet"
@@ -54,7 +57,6 @@ author:
 params:
   ### Global
   description: "Cirrus, Cirrostratus & Cirrocumulus. From Stockholm. With Love."
-  disqusShortname: "fourteenislands"
   ### Available for social: 'open-graph', 'google-news', 'schema' and 'twitter-summary-card'
   social:
     - open-graph
@@ -62,12 +64,11 @@ params:
   ### Theme
   layoutReverse: true
   ### Sidebar
-  cookies: >
-    This website uses [cookies](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer) 
-    to ensure you get the best experience.
+  cookies: This website uses [cookies](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer).
+  # Displays "Powered by..."
   powered: false
   rss: true
-  ### Will display in sidebar as '© 2010-2017' for example
+  ### Will display in sidebar as '© 1980-2018' for example
   since: "1980"
 
 permalinks:
@@ -77,6 +78,9 @@ permalinks:
 taxonomies:
   category: "categories"
   tag: "tags"
+
+---
+
 
 ---
 ```
