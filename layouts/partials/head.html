@@ -24,7 +24,7 @@
   {{ if in .Site.Params.social "twitter-summary-card" }}{{ partial "twitter-summary-card.html" . }}{{ end }}
 
   <!-- CSS -->
-  {{ $style := resources.Get "scss/styles.scss" | resources.ToCSS | resources.Minify }}
+  {{ $style := resources.Get "scss/styles.scss" | resources.ToCSS | resources.Minify | fingerprint }}
   <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
 
   <!-- RSS -->
