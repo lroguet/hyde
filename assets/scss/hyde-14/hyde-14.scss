@@ -2,6 +2,13 @@
  * Additional CSS for Hyde-14
  */
 
+ /*
+ * Font Awesome
+ */
+ .svg-inline--fa {
+   margin-right: 0.1em;
+ }
+
 /*
  * Content
  */
@@ -15,14 +22,6 @@ blockquote {
   margin-bottom: 1.5em;
   border-bottom: 1px solid #e5e5e5;
 }
-
-/*
-.taxonomy {
-  margin-top: 1.5em;
-  padding-top: 0.75em;
-  border-top: 1px solid #e5e5e5;
-}
-*/
 
 .pagination {
   display: inline-block;
