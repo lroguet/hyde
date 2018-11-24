@@ -7,7 +7,7 @@
 			{{ .Date.Format "Jan 2, 2006" }}
 			&middot; {{ .ReadingTime }} minute read
 			{{ if and (.Site.Params.disqusShortname) (ne .Params.comments false) }}
-				&middot; <a href="{{ .Permalink }}#disqus_thread" title="Comments on '{{ .Title }}'">Comments</a>
+				&middot; <i class="fas fa-comments"></i> <a href="{{ .Permalink }}#disqus_thread" title="Comments on '{{ .Title }}'">Comments</a>
 			{{ end }}
 		</span>
 		{{ .Content }}
