@@ -25,6 +25,7 @@
 
   <!-- CSS -->
   {{ $style := resources.Get "scss/styles.scss" | resources.ToCSS | resources.Minify | fingerprint }}
+  <link rel="preload" as="style" href="{{ $style.Permalink }}">
   <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
 
   <!-- RSS -->
