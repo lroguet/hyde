@@ -1,4 +1,4 @@
-<div class="sidebar no-print">
+<aside class="sidebar no-print">
   <div class="container sidebar-sticky">
 
     <div class="sidebar-about">
@@ -17,6 +17,7 @@
       {{end}}
     </div>
 
+    <nav>
     <ul class="sidebar-nav">
       <li><a href="/" title="{{ .Site.Title }}">Home</a> </li>
       <li><a href="/posts" title="All posts">All posts</a></li>
@@ -34,8 +35,9 @@
       {{ if .Site.Params.rss }}<a href="{{ "/index.xml" | absURL }}" type="application/rss+xml" title="Subscribe to all {{ .Site.Title }} content"><i class="fas fa-rss-square fa-2x"></i></a>{{ end }}
       </li>
     </ul>
+    </nav>
 
     {{ partial "copyright.html" . }}
 
   </div>
-</div>
+</aside>
