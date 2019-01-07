@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
 
+<main>
 <div class="content container">
   <div class="posts">
     {{ range where .Paginator.Pages "Type" "posts" }}
@@ -19,5 +20,6 @@
     {{ template "_internal/pagination.html" . }}
   </div>
 </div>
+</main>
 
 {{ partial "foot.html" . }}
