@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
 
+<main>
 <div class="content container">
 	<article class="post">
 		<h1 class="post-title">{{ .Title }}</h1>
@@ -18,5 +19,6 @@
 		{{ partial "disqus.html" . }}
 	{{ end }}
 </div>
+</main>
 
 {{ partial "foot.html" . }}
