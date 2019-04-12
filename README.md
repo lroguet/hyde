@@ -26,7 +26,7 @@ For all configuration options available in Hyde, see the original [documentation
 - Combined & minified style sheet (CSS)
 - Open Graph, Google News, Schema & Twitter Cards meta tags
 - Reading time below post title
-- Social links with [Font Awesome](http://fontawesome.io/) 5.6.3
+- Social links with [Font Awesome](http://fontawesome.io/) 5.8.1
 - HTML5 Semantic Elements
 - And a few other layout changes to my liking
 
