@@ -13,7 +13,12 @@
           <span class="post-metadata-item"><i class="fas fa-comments"></i><a href="{{ .Permalink }}#disqus_thread" title="Comments on '{{ .Title }}'">Comments</a></span>
         {{ end }}
       </span>
-      {{ .Content }}
+      {{ if or (eq .Site.Params.truncate true) (eq .Params.truncate true) }}
+        {{ .Summary }}
+        {{ if .Truncated }}<div style="margin-bottom: 1em"><a href="{{ .Permalink }}" title="{{ .Title }}">Continue reading...</a></div>{{ end }}
+      {{ else }}
+        {{ .Content }}
+      {{ end }}
       {{ partial "taxonomy.html" . }}
     </article>
     {{ end }}
