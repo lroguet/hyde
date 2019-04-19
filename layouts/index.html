@@ -15,11 +15,13 @@
       </span>
       {{ if or (eq .Site.Params.truncate true) (eq .Params.truncate true) }}
         {{ .Summary }}
-        {{ if .Truncated }}<div style="margin-bottom: 1em"><a href="{{ .Permalink }}" title="{{ .Title }}">Continue reading...</a></div>{{ end }}
+        {{ if .Truncated }}<div class="continue-reading"><a href="{{ .Permalink }}" title="{{ .Title }}">Continue reading...</a></div>{{ end }}
       {{ else }}
         {{ .Content }}
       {{ end }}
-      {{ partial "taxonomy.html" . }}
+      {{ if .Site.Params.taxonomiesOnIndex }}
+        {{ partial "taxonomy.html" . }}
+      {{ end }}
     </article>
     {{ end }}
     {{ template "_internal/pagination.html" . }}
