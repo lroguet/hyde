@@ -59,10 +59,6 @@ ul.posts {
  * Sidebar
  */
 
-.sidebar-about h1 {
-  font-size: 1.8rem;
-}
-
 .sidebar-about img {
   margin: 0 auto 0.5rem auto;
   width: 150px;
@@ -89,7 +85,13 @@ ul.posts {
   margin-bottom: 1rem;
 }
 
-.sidebar-lead {
+.sidebar-author {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.sidebar-description {
   font-size: 1rem;
 }
 
