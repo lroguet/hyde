@@ -9,9 +9,9 @@
           <img src="https://www.gravatar.com/avatar/{{ .Site.Author.avatar }}?s=200" alt="{{ .Site.Author.name }}" title="{{ .Site.Author.name }}">
         {{ end }}
       {{ end }}
-      <h1>{{ .Site.Author.name }}</h1>
+      <p class="sidebar-author">{{ .Site.Author.name }}</p>
       {{ with .Site.Params.description }}
-        <p class="sidebar-lead">
+        <p class="sidebar-description">
           {{ . | markdownify }}
         </p>
       {{end}}
@@ -19,12 +19,11 @@
 
     <nav>
     <ul class="sidebar-nav">
-      <li><a href="/" title="{{ .Site.Title }}">Home</a> </li>
-      <li><a href="/posts" title="All posts">All posts</a></li>
-      {{ range .Site.Menus.main }}
-        <li><a href="{{.URL}}"> {{ .Name }} </a></li>
-      {{end}}
+      {{ range .Site.Menus.sidebar }}
+      <li><a href="{{ .URL }}" title="{{ .Identifier }}">{{ .Identifier }}</a></li>
+      {{ end }}
     </ul>
+    </nav>
 
     <ul class="sidebar-nav">
       <li class="sidebar-nav-item">
